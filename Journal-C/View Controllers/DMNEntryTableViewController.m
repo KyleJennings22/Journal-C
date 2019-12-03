@@ -23,6 +23,11 @@
     [self.tableView reloadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 
@@ -68,4 +73,6 @@
 }
 
 
+- (IBAction)addEntryBarButtonItem:(UIBarButtonItem *)sender {
+}
 @end

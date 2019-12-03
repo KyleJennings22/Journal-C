@@ -10,9 +10,11 @@
 #import "DMNEntry.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DMNEntryDetailViewController : UIViewController
+@interface DMNEntryDetailViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UITextField *entryTitleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
+
+- (IBAction)saveBarButtonTapped:(UIBarButtonItem *)sender;
 
 @property (nonatomic) DMNEntry *entryLandingPad;
 

@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DMNEntryTableViewController : UITableViewController
+- (IBAction)addEntryBarButtonItem:(UIBarButtonItem *)sender;
+
 
 @end
 

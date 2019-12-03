@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
                     bodyText: (NSString *)bodyText
                     timestamp: (NSDate *)timestamp;
                     
-                
+
 
 @end
 

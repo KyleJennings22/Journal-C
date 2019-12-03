@@ -42,7 +42,13 @@
                             <outlet property="delegate" destination="x1W-NM-44a" id="o0P-iX-VyZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DUI-hS-3u0"/>
+                    <navigationItem key="navigationItem" id="DUI-hS-3u0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8a1-M3-CKb">
+                            <connections>
+                                <segue destination="jDz-To-T5N" kind="show" id="GwV-xz-AMi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vca-Jf-i3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +81,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aA2-Ez-kXJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Ez-oa-HEa"/>
+                    <navigationItem key="navigationItem" id="1Ez-oa-HEa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hoY-sr-osn">
+                            <connections>
+                                <action selector="saveBarButtonTapped:" destination="jDz-To-T5N" id="opl-Rb-S3F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bodyTextView" destination="PJm-PC-wRC" id="imS-Wu-JWl"/>
                         <outlet property="entryTitleTextField" destination="ppU-Mm-psH" id="oEe-Ar-otz"/>
@@ -104,4 +116,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="158.70535714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GwV-xz-AMi"/>
+    </inferredMetricsTieBreakers>
 </document>

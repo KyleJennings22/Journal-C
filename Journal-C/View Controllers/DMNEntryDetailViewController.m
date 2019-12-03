@@ -7,6 +7,8 @@
 //
 
 #import "DMNEntryDetailViewController.h"
+#import "DMNEntry.h"
+#import "DMNEntryController.h"
 
 @interface DMNEntryDetailViewController ()
 
@@ -35,4 +37,13 @@
     }
 }
 
+- (IBAction)saveBarButtonTapped:(UIBarButtonItem *)sender
+{
+    if (![_entryTitleTextField.text  isEqual: @""] && ![_bodyTextView.text  isEqual: @""]) {
+        NSDate *currentTime = [NSDate new];
+        NSLog(@"nerp");
+        [DMNEntryController.shared addEntry:_entryTitleTextField.text bodyText:_bodyTextView.text timestamp:currentTime];
+        [self.navigationController popViewControllerAnimated:true];
+    }
+}
 @end
